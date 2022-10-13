@@ -1,0 +1,57 @@
+<h1>Non_primitivedataType_Inangular_stringInterpolation(ts to html)</h1>
+<p>employee-list works!</p>
+
+{{u}}<br>
+{{u.uid}}<br>
+{{u.uname}}<br>
+{{u.uadd}}<br>
+{{u.bank.acno}}<br>
+{{u.bank.bankname}}
+
+
+<h1>NonPrimitiveDataType_in_Angular_Using Array:</h1>
+<div *ngFor='let l of uarr '>{{l.uid}}<br>
+    {{l.uname}}<br>{{l.uadd}}<br></div>
+    <h1>Property Binding(ts to html)</h1>
+Username :<input type="text" [value]="sname"><br>
+<button >Submit</button>
+
+
+<h1>Event Binding(html to ts)</h1>
+<h2 (mouseover)="j()" (mouseout)="k()">{{name}}</h2>
+
+<button (click)="onclick()">Click Me</button>
+
+
+<h1>ngModel_Two Way Data Binding in Angular(ts to html and html to ts)</h1>
+Name :<input type="text" [(ngModel)]="tname"><br>
+{{tname}}
+
+
+UID :<input type="text" [(ngModel)]="u.uid"><br>
+{{u.uid}}<br>
+NAME :<input type="text" [(ngModel)]="u.uname"><br>
+{{u.uname}}<br>
+Address:<input type="text" [(ngModel)]="u.uadd"><br>
+{{u.uadd}}<br>
+AccountNo:<input type="text" [(ngModel)]="u.bank.acno"><br>
+{{u.bank.acno}}<br>
+BANK NAME:<input type="text" [(ngModel)]="u.bank.bankname"><br>
+{{u.bank.bankname}}<br>
+BANK USER NAME:<input type="text" [(ngModel)]="u.bank.bankuname"><br>
+{{u.bank.bankuname}}<br>
+BANK PASSWORD:<input type="text" [(ngModel)]="u.bank.bankupass"><br>
+{{u.bank.bankupass}}<br>
+
+
+1 no :<input type="number" [(ngModel)]="fno"><br>
+
+2 no :<input type="number" [(ngModel)]="sno"><br>
+
+Addition :{{fno+sno}} ,Subtration:{{fno-sno}},Multiplication:{{fno*sno}},Division :{{fno/sno}}
+
+
+
+
+
+
